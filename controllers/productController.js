@@ -15,7 +15,7 @@ const getProducts = asyncHandler(async (req, res) => {
         _id: 'dummy1',
         name: 'Hoodlum T-Shirt',
         price: 19.99,
-        image: '../images/1.png', // Ensure you have an image at this path or use a URL
+        image: '/images/1.png',
         description: 'A stylish T-shirt with the Hoodlum Mentality logo.',
         brand: 'Hoodlum',
         category: 'Apparel',
@@ -26,7 +26,7 @@ const getProducts = asyncHandler(async (req, res) => {
         _id: 'dummy2',
         name: 'Hoodlum Hoodie',
         price: 39.99,
-        image: '../images/2.png', // Ensure this image exists or use a URL
+        image: '/images/2.png',
         description: 'A cozy hoodie with a bold design.',
         brand: 'Hoodlum',
         category: 'Apparel',
@@ -37,7 +37,7 @@ const getProducts = asyncHandler(async (req, res) => {
         _id: 'dummy3',
         name: 'Hoodlum Cap',
         price: 14.99,
-        image: '../images/3.png', // Ensure this image exists or use a URL
+        image: '/images/3.png',
         description: 'A cool cap to complete your look.',
         brand: 'Hoodlum',
         category: 'Accessories',
