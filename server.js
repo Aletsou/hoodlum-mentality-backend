@@ -3,6 +3,9 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
+const app = express();
+
+app.use(express.static('public'));
 
 const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
@@ -10,8 +13,6 @@ const orderRoutes = require('./routes/orderRoutes');
 
 dotenv.config();
 connectDB();
-
-const app = express();
 
 // Middleware
 app.use(cors({
