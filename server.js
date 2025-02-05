@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://www.hoodlumentality.com',
+  origin: ['https://hoodlumentality.com', 'https://www.hoodlumentality.com'],
   credentials: true,
 }));
 app.use(express.json());
